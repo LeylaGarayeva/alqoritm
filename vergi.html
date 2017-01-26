@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Rubluk vergi hesabati</title>
+</head>
+<body>	
+
+<script>
+
+var name = prompt("Rubu qeyd edin");
+	  var h_1 = prompt("Rubun ilk ayi olan hasilati daxil edin");
+	    var h_2 = prompt("Rubun ikinci ayi olan hasilati daxil edin");
+	    var h_3 = prompt("Rubun ucuncu ayi olan hasilati daxil edin");
+	    
+	  var c_1 = prompt("Rubun ilk ayi olan umumi odenisi daxil edin");
+	    var c_2 = prompt("Rubun ikinci ayi olan umumi odenisi daxil edin");
+	    var c_3 = prompt("Rubun ucuncu ayi olan umumi odenisi daxil edin");
+	    var h = parseInt(h_1)+parseInt(h_2)+parseInt(h_3);
+	    var c = parseInt(c_1)+parseInt(c_2)+parseInt(c_3);
+       var vergi=0;
+        if (h <= 200000) {
+            vergi = (c * 4) / 100;
+            alert("Vergiye odenilenecek "+ name + "rub ucun hesabat hazirlandi" );
+        } else {
+            vergi = (c * 6) / 100;
+        }
+
+        document.write('Rub erzinde hasilat : ' + h +"<br> Rub erzinde odenilen mebleg " +c+ "<br> Odenilecek vergi meblegi " + vergi);
+
+
+
+</script>
+</body>
+</html>
